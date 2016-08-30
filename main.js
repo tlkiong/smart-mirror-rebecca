@@ -22,7 +22,7 @@ function createWindow() {
   });
 
   // Load index.html of the app
-  mainWindow.loadURL(`file://${__dirname}/app/index.html`);
+  mainWindow.loadURL(`file://${__dirname}/www/index.html`);
 
   // To open the devTools
   mainWindow.webContents.openDevTools();
