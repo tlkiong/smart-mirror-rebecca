@@ -18,7 +18,8 @@ function createWindow() {
     fullscreen: true,
     toolbar: false,
     title: 'Rebecca',
-    frame: false
+    frame: false,
+    backgroundColor: '#000'
   });
 
   // Load index.html of the app
