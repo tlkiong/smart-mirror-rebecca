@@ -1,0 +1,28 @@
+{
+  "name": "smart-mirror-rebecca",
+  "version": "0.0.1",
+  "description": "Smart mirror Rebecca",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlkiong/smart-mirror-rebecca.git"
+  },
+  "keywords": [
+    "Smart",
+    "Mirror",
+    "Rebecca"
+  ],
+  "author": "Kiong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tlkiong/smart-mirror-rebecca/issues"
+  },
+  "homepage": "https://github.com/tlkiong/smart-mirror-rebecca#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.3.4"
+  }
+}
