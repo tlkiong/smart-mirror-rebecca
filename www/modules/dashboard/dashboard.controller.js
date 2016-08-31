@@ -74,6 +74,9 @@
       }
 
       function init() {
+        getCurrentDate();
+        getCurrentTime();
+        
         interval(function() {
           getCurrentDate();
           getCurrentTime();
