@@ -2,8 +2,11 @@
   <section id="top" class="flexAcross">
     <div class="sideSpace"></div>
     <div class="centerContainer flexExpand flexAcross">
-      <div id="weather">Weather</div>
-      <div id="dateTime">DateTime</div>
+      <div id="widget-weather">Weather</div>
+      <div id="widget-dateTime">
+        <div id="date">{{ vm.widget.dateTime.date }}</div>
+        <div id="time">{{ vm.widget.dateTime.time }}</div>
+      </div>
     </div>
     <div class="sideSpace"></div>
   </section>
@@ -15,7 +18,7 @@
   <section id="btm" class="flexAcross">
     <div class="sideSpace"></div>
     <div class="centerContainer flexExpand flexAcross">
-      <div id="left" class="clickable" ng-click="vm.openMediaPlayer($event)">Media Player</div>
+      <div id="widget-mediaPlayer" class="clickable" ng-click="vm.openMediaPlayer($event)">Media Player</div>
     </div>
     <div class="sideSpace"></div>
   </section>

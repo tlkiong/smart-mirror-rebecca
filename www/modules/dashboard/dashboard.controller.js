@@ -4,19 +4,26 @@
     angular.module('Dashboard')
         .controller('dashboardController', dashboardController);
 
-    dashboardController.$inject = ['$mdDialog', 'commonService', 'dashboardService'];
+    dashboardController.$inject = ['$interval', '$mdDialog', 'commonService', 'dashboardService'];
 
-    function dashboardController($mdDialog, commonService, dashboardService) {
+    function dashboardController($interval, $mdDialog, commonService, dashboardService) {
       var vm = this;
       vm.openMediaPlayer = openMediaPlayer;
 
       /* ======================================== Var ==================================================== */
+      vm.widget = {
+        dateTime: {
+          date: '',
+          time: ''
+        }
+      }
       vm.misc = {};
 
       /* ======================================== Services =============================================== */
       var svc = dashboardService;
       var cmnSvc = commonService;
       var mdDialog = $mdDialog;
+      var interval = $interval;
 
       /* ======================================== Public Methods ========================================= */
       function openMediaPlayer(ev) {
@@ -37,6 +44,23 @@
 
 
       /* ======================================== Private Methods ======================================== */
+      function getCurrentDate() {
+        vm.widget.dateTime.date = cmnSvc.getDateInDDMMMMYYYY(Date.now());
+      }
+
+      function getCurrentTime() {
+        var d = new Date();
+        vm.widget.dateTime.time = getAs2DigitString(d.getHours()) + ':' + getAs2DigitString(d.getMinutes()) + ':' + getAs2DigitString(d.getSeconds());
+      }
+
+      function getAs2DigitString(val) {
+        if (val.toString().length == 1) {
+          return '0'+val;
+        } else {
+          return val;
+        }
+      }
+
       function DialogController($scope, $mdDialog) {
         $scope.hide = function() {
           $mdDialog.hide();
@@ -50,7 +74,10 @@
       }
 
       function init() {
-          
+        interval(function() {
+          getCurrentDate();
+          getCurrentTime();
+        }, 1000)
       }
 
       init();

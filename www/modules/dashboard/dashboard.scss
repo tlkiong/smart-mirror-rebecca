@@ -30,6 +30,19 @@
     justify-content: space-between;
     align-items: center;
   }
+  #widget-weather {
+    // 
+  }
+  #widget-dateTime {
+    text-align: right;
+    #date {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  }
+  #widget-mediaPlayer {
+    // 
+  }
 }
 
 md-dialog {
