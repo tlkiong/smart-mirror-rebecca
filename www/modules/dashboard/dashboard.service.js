@@ -1,11 +1,11 @@
 (function() {
 	'use strict';
 	
-	angular.module('Sample')
-		.service('sampleService', sampleService);
+	angular.module('Dashboard')
+		.service('dashboardService', dashboardService);
 
-		sampleService.$inject = [];
-		function sampleService() {
+		dashboardService.$inject = [];
+		function dashboardService() {
 			var service = this;
 
 			/* ======================================== Var ==================================================== */

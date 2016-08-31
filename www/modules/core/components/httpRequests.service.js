@@ -17,7 +17,7 @@
 			var apiObj = {
 				openWeatherApi: {
 					methodType: 'GET',
-					url: ''
+					url: 'http://api.openweathermap.org/data/2.5/weather'
 				}
       	/*  Example:
       	

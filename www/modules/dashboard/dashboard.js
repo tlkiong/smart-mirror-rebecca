@@ -1,15 +1,15 @@
 (function () {
   'use strict';
     
-	angular.module('Sample', [])
+	angular.module('Dashboard', [])
 		.config(function ($stateProvider) {
 			$stateProvider
-				.state('sample', {
-            url: '/',
+				.state('dashboard', {
+            url: '/dashboard',
             views: {
               'main': {
-                templateUrl: './modules/sample/sample.html',
-                controller: 'sampleController',
+                templateUrl: './modules/dashboard/dashboard.html',
+                controller: 'dashboardController',
                 controllerAs: 'vm'
               }
             }
@@ -29,7 +29,7 @@
           //         'subMain': {     <= This means load this bottom view into the subMain named ui-view
           //             templateUrl: './modules/sample/sample.html',
           //             controller: 'sampleController',
-          //             controllerAs: 'vm'a
+          //             controllerAs: 'vm'
           //         }
           //     }
           // });
