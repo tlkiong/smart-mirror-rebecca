@@ -18,7 +18,11 @@
 				openWeatherApi: {
 					methodType: 'GET',
 					url: 'http://api.openweathermap.org/data/2.5/weather'
-				}
+				},
+        googleLocationSvc: {
+          methodType: 'GET',
+          url: 'https://maps.googleapis.com/maps/api/browserlocation/json?browser=chromium&sensor=true'
+        }
       	/*  Example:
       	
       	name: {

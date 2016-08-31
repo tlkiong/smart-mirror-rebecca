@@ -2,7 +2,18 @@
   <section id="top" class="flexAcross">
     <div class="sideSpace"></div>
     <div class="centerContainer flexExpand flexAcross">
-      <div id="widget-weather">Weather</div>
+      <div id="widget-weather" class="flexDown">
+        <table>
+          <tr>
+            <th class="flexAcross"><div class="flexExpand">Temperature</div>:</th>
+            <td id="temperature">{{ vm.widget.weather.temperature }} &deg;C</td>
+          </tr>
+          <tr>
+            <th class="flexAcross"><div class="flexExpand">Humidity</div>:</th>
+            <td id="humidity">{{ vm.widget.weather.humidity }} %</td>
+          </tr>
+        </table>
+      </div>
       <div id="widget-dateTime">
         <div id="date">{{ vm.widget.dateTime.date }}</div>
         <div id="time">{{ vm.widget.dateTime.time }}</div>
