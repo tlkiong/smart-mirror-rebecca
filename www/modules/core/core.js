@@ -3,9 +3,10 @@
 
 	angular.module('Core', [
 			'ngSanitize',
-			'ngTouch',
+			// 'ngTouch', // This is not compatible with ngMaterial
 			'ngAnimate',
 			'ui.router',
-      'pascalprecht.translate'
+      'pascalprecht.translate',
+      'ngMaterial'
 		]);
 })();
