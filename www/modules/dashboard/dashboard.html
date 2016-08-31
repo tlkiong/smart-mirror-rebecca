@@ -1,1 +1,22 @@
-<div>Just for a Dashboard</div>
+<section class="dashboardContainer">
+  <section id="top" class="flexAcross">
+    <div class="sideSpace"></div>
+    <div class="centerContainer flexExpand flexAcross">
+      <div id="weather">Weather</div>
+      <div id="dateTime">DateTime</div>
+    </div>
+    <div class="sideSpace"></div>
+  </section>
+  <section id="mid" class="flexAcross">
+    <section id="midLeft" class="flexDown"></section>
+    <section id="midCenter" class="flexDown"></section>
+    <section id="midRight" class="flexDown"></section>
+  </section>
+  <section id="btm" class="flexAcross">
+    <div class="sideSpace"></div>
+    <div class="centerContainer flexExpand flexAcross">
+      <div id="left" class="clickable" ng-click="vm.openMediaPlayer($event)">Media Player</div>
+    </div>
+    <div class="sideSpace"></div>
+  </section>
+</section>
