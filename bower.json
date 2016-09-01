@@ -28,6 +28,7 @@
     "angular-sanitize": "^1.5.8",
     "angular-touch": "^1.5.8",
     "angular-translate": "^2.11.1",
-    "angular-material": "^1.1.0"
+    "angular-material": "^1.1.0",
+    "tracking": "https://github.com/eduardolundgren/tracking.js.git#^1.1.2"
   }
 }

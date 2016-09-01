@@ -15,6 +15,7 @@
     #midCenter {
       width: 80%;
       border: 6px solid #FFF;
+      position: relative;
     }
     #midRight {
       width: calc(10% - 3px);
@@ -42,6 +43,15 @@
   }
   #widget-mediaPlayer {
     // 
+  }
+  video {
+    height: 100%;
+    width: 100%;
+  }
+  #canvas {
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 }
 
